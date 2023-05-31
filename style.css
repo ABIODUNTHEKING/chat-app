@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#68EACC, #497BE8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header{
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px;
+
+}
+
+.user-button{
+    width: 50%;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    color: white;
+    background-color: rgba(17, 38, 109, 0.842);
+    cursor: pointer;
+    
+}
+
+button:hover{
+    filter: brightness(0.7);
+}
+
+.user-button:active{
+    transform: translateY(2px);
+}
+
+.active{
+    background-color: #497BE8;
+}
+
+main{
+    width: 40rem;
+    background-color: rgb(9, 13, 32);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+    color: white;
+    background-color: rgba(17, 38, 109, 0.842);
+    padding: 10px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.messages{
+    overflow-y: scroll;
+    height: 60vh;
+}
+
+.messages::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.user-message{
+    margin-bottom: 10px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.username{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.time{
+    text-align: right;
+    font-size: 12px;
+}
+
+.active-message{
+    background-color: #497BE8;
+}
+
+.inactive-message{
+    background-color: #7791ca;
+}
+
+form{
+    margin: 5px 0;
+    display: flex;
+    width: 100%;
+    gap: 7px;  
+}
+
+#text{
+    width: 80%;
+    resize: none;
+    outline: 0;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#text::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+input[type="submit"]{
+    border-radius: 5px;
+    padding: 5px 25px;
+    background-color: rgba(22, 24, 126, 0.733);
+    color: white;
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+}
+
+button[type="submit"]:hover{
+    background-color: rgba(22, 22, 126, 0.);
+}
+
+.delete-button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+    main, header{
+        width: 90%;
+    }
+}
